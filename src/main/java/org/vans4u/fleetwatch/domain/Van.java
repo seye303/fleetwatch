@@ -28,7 +28,7 @@ public class Van {
     private VanType type;
 
     @NotNull(message = "Registration number is mandatory")
-    @Pattern(regexp = "[A-Z]{2}[0-9]{2}\s[A-Z]{3}$", message = "Registration number must be of form 'AANN AAA'")
+    @Pattern(regexp = "^[A-Z]{2}[0-9]{2}\\s[A-Z]{3}$", message = "Registration number must be of form 'AANN AAA'")
     private String registrationNumber;
 
     @Min(0)
